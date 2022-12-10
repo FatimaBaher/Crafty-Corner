@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
 *{
     box-sizing: border-box;
     color: #555;
@@ -224,9 +225,7 @@
     margin-top: 25px;
 }
 .cont{
-    
-    height: 400px;
-    margin-top: 40px;
+    margin: 40px 0px;
 }
 .month{
     margin-left: 34%;
@@ -246,4 +245,33 @@
     margin-left: 47.6%;
     text-decoration: none;
 
+}
+
+
+.home-inspiration{
+    background-color: #f8dae1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+.home-inspiration>#text1{
+    font-size: 33px;
+    color: #27334b;
+    height: min-content;
+}
+.home-inspiration>#text2{
+    font-size: 59px;
+    color: #27334b;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.home-inspiration__images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
 }
