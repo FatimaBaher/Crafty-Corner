@@ -1,0 +1,34 @@
+footer{
+    background-color: #f8dae1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 45px 0;
+}
+
+.footer-title{
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+.footerGrp>span:nth-of-type(2){
+    display: inline-block;  
+    font-size: 14px;
+}
+
+
+.footerGrp:nth-of-type(1)>span:nth-of-type(2){
+    width: 200px;
+    
+}
+
+.footer-sitemap{
+    display: flex;
+    justify-content: start;
+    gap: 80px;
+}
+

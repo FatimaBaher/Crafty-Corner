@@ -1,0 +1,30 @@
+main{
+    margin: 20px 45px 50px 45px;
+    background-color: #fff;
+}
+
+.story-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.story-container-content{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.box-behind{
+    width: 655px;
+    height: 880px;
+}
+.story-title{
+    font-weight: 900;
+    background-image: url("../images/Path 232.svg");
+    background-repeat: no-repeat;
+
+    /* size is used to determine the width and height of background image, first value is width, in this case we dnt want to change so we leave it as auto, second is height and we need to take 100% height of the h2 since if we didnt it will take more than 100% since the image is bigger so the bottom part of the image will overflow and not show */
+    background-size: auto 100%;
+}

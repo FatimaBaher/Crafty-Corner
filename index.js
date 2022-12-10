@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function() {
     $('#autoWidth').lightSlider({
         autoWidth:true,

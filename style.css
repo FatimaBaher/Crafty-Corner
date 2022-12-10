@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css);
 *{
     box-sizing: border-box;
     color: #555;
+    font-family: poppins, sans-serif;
 }
 .navbar{
     width: 100%;
@@ -255,16 +257,15 @@
     justify-content: space-around;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-
+    margin-bottom: 114.5px;
+    padding: 60px;
 }
 .home-inspiration>#text1{
     font-size: 33px;
-    color: #27334b;
     height: min-content;
 }
 .home-inspiration>#text2{
     font-size: 59px;
-    color: #27334b;
     text-decoration: underline;
     margin-bottom: 20px;
     cursor: pointer;
@@ -275,3 +276,44 @@
     justify-content: center;
     gap: 60px;
 }
+
+.home-ourStory{
+    background-color: #ecddf0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 33px 0;
+    margin-bottom: 114.5px;
+    gap: 39px;
+}
+
+.home-ourStory__text{
+    color: #27334b;
+    text-align: center;
+}
+
+.ourStoryImg1{
+    width: 512px;
+    position: absolute;
+    left: 0;
+    bottom: -114px;
+}
+
+.ourStoryImg2{
+    width: 484px;
+    position: absolute;
+    right: 0;
+    top: -153px;
+}
+
+.btnKnowMore{
+    background-color: #27334b;
+    width: 218px;
+    height: 58px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
