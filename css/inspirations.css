@@ -1,0 +1,35 @@
+
+.inspirations-hero{
+    width: 100%;
+    height: 650px;
+    background: url("../images/ec1efd4f1ffc0ed14258cbef72e213fc.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.inspirations-hero>h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 130px;
+    font-weight: 500;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+
+.inspiration-image-grid{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr .5fr .5fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 15px;
+    width: 85%;
+    aspect-ratio: 1.4;
+    margin-inline: auto;
+    margin-bottom: 40px;
+}
+
+.inspiration-image-grid > div{
+    background-size: 100% 100%;
+}
+

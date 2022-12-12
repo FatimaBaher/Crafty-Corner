@@ -17,14 +17,59 @@ main{
 }
 
 .box-behind{
-    width: 655px;
-    height: 880px;
+    width: 485px;
+    aspect-ratio: 0.75;
+    position: relative;
 }
+
+.box-behind-one{
+    background-color: #ecddf0;
+}
+
+.box-behind-two{
+    background-color: #e5fdf7;
+}
+
+.box-behind-three{
+    background-color: #fff6e5;
+}
+
+.stories-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 150px;
+}
+
 .story-title{
     font-weight: 900;
-    background-image: url("../images/Path 232.svg");
     background-repeat: no-repeat;
-
-    /* size is used to determine the width and height of background image, first value is width, in this case we dnt want to change so we leave it as auto, second is height and we need to take 100% height of the h2 since if we didnt it will take more than 100% since the image is bigger so the bottom part of the image will overflow and not show */
     background-size: auto 100%;
+    margin-bottom: 15px;
 }
+
+.story-title-one{
+    background-image: url("../images/Path 232.svg");
+}
+.story-title-two{
+    background-image: url("../images/ourMissionSVG.svg");
+}
+.story-title-three{
+    background-image: url("../images/ourVisionSVG.svg");
+}
+
+.story-text{
+    color: #1a1818;
+    font-size: 18px;
+    width: 580px;
+}
+
+.story-image{
+    width: 420px;
+    aspect-ratio: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+}
+
