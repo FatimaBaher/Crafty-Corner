@@ -1,3 +1,10 @@
+//grabbing elements
+const createBtn =document.querySelector('#create-btn');
+
+//Adding Event Listeners
+createBtn.addEventListener(()=>{
+
+})
 
 $(document).ready(function() {
     $('#autoWidth').lightSlider({

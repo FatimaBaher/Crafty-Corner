@@ -11,9 +11,18 @@ body{
     background-position: center; 
 }
 
-.login-form{
+.form-parent{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.signup-form{
+    opacity: 0;
+}
+
+.login-form,.signup-form{
     width: fit-content;
-    margin-inline: auto;
     background-color: #fdedef;
     display: flex;
     flex-direction: column;
@@ -21,18 +30,20 @@ body{
     padding: 30px 70px;
     gap: 20px;
     text-align: center;
+    position: absolute;
+    transition: 0.5s;
 }
 
 h2, h6, p{
     margin: 0;
 }
 
-.login-form h6{
+.login-form h6, .signup-form h6{
     text-decoration: underline;
     font-size: 22px;
 }
 
-.login-form input{
+.login-form input, .signup-form input{
     border: none;
     width: 100%;
     background-color: white;
@@ -42,27 +53,28 @@ h2, h6, p{
 input:focus{
     outline: none;
 }
-.login-form p{
+.login-form p, .signup-form p{
     font-size: 13px;
 }
 
-.login-btn{
+.register-btn{
     border: none;
     background-color: white;
     padding: 6px 18px;
     width: fit-content;
 }
 
-.login-options{
+.register-options{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
 }
 
-.login-options a{
+.register-options a{
     color: black;
     font-size: inherit;
+    cursor: pointer;
 }
 
 .forgot-password{
