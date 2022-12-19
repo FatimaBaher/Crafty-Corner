@@ -2,24 +2,18 @@ body{
     height: 100vh;
     overflow: hidden;
 }
-.login-wrapper{
+
+
+.form-parent{
     width: 100%;
     height: 85vh;
     background-image: url("../images/665886_34e45660cc8b427088aedc03fa593159.jpg");
     background-size: 100vw;
     background-repeat: no-repeat;  
     background-position: center; 
-}
-
-.form-parent{
-    display: flex;
-    justify-content: center;
     position: relative;
 }
 
-.signup-form{
-    opacity: 0;
-}
 
 .login-form,.signup-form{
     width: fit-content;
@@ -30,8 +24,6 @@ body{
     padding: 30px 70px;
     gap: 20px;
     text-align: center;
-    position: absolute;
-    transition: 0.5s;
 }
 
 h2, h6, p{
@@ -85,3 +77,31 @@ input:focus{
     top: 50%;
     transform: translateY(-50%);
 }
+
+.login-form-wrapper, .signup-form-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.signup-form-wrapper{
+    opacity: 0;
+    z-index: 1;
+}
+.login-form-wrapper{
+    z-index: 2;
+}
+
+form{
+    height: fit-content;
+}
+
+
+
+
+

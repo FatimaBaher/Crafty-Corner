@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="css/lightslider.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/login-signup.css">
+    <script src="js/login-signup.js" defer></script>
     <title>Log In</title>
 </head>
 <body>
@@ -40,13 +41,13 @@
         </div>
         <div class="links">
             <ul>
-                <li><a href="index.html"><b>Home</b></a>  </li>
+                <li><a href="index.html">Home</a>  </li>
                 <li><i class="fa-solid fa-circle"></i></li>
                 <li><a href="ourStory.html"> Our Story</a></li>
                 <li><i class="fa-solid fa-circle"></i></li>
                 <li><a href="shop.html">Shop</a> </li>
                 <li><i class="fa-solid fa-circle"></i></li>
-                <li><a href="package.html">Package</a></li>
+                <li><a href="package.html"> Package</a></li>
                 <li><i class="fa-solid fa-circle"></i></li>
                 <li><a href="inspirations.html"> Inspirations</a></li>
                 <li><i class="fa-solid fa-circle"></i></li>
@@ -55,14 +56,14 @@
         </div>
         <div class="actions">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <a href="login.html"></a><i class="fa-solid fa-user"></i></a>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </div>
 
 
-    <main class="login-wrapper">
-        <div class="form-parent">
+    <main class="form-parent">
+        <div class="login-form-wrapper">
             <form class="login-form">
                 <h2>Welcome Back</h2>
                 <h6>Login</h6>
@@ -74,7 +75,7 @@
                 </div>
                 <button class="register-btn">Login</button>
                 <div class="register-options">
-                    <p>Don't have an account? <a href="signup.html" id="create-btn">Create one.</a></p>
+                    <p>Don't have an account? <a href="#" id="create-btn">Create one.</a></p>
                     <p>or</p>
                     <p>Create Account With</p>
                     <div class="register-options-icons">
@@ -84,6 +85,8 @@
                     </div>
                 </div>               
             </form>
+        </div>
+        <div class="signup-form-wrapper">
             <form class="signup-form">
                 <h2>Welcome Back</h2>
                 <h6>Register</h6>
@@ -93,7 +96,7 @@
                 <input type="text" placeholder="Password">
                 <button class="register-btn">Sign Up</button>
                 <div class="register-options">
-                    <p>Already have an account? <a href="login.html" id="signup-btn">Log in.</a></p>
+                    <p>Already have an account? <a href="#" id="signup-btn">Log in.</a></p>
                     <p>or</p>
                     <p>Create Account With</p>
                     <div class="register-options-icons">
@@ -102,12 +105,8 @@
                         <img src="images/twitter.png" class="fa" alt="">
                     </div>
                 </div>
-                
             </form>
         </div>
-        
-
-        
     </main>
     
 </body>

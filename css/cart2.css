@@ -1,0 +1,66 @@
+
+.checkout-form{
+    width: 65vw;
+    padding: 50px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.contact-form>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart2-title{
+     font-size: 22px;
+     color: #27334b;
+     font-weight: 550;
+    
+}
+
+.cart2-title:nth-of-type(2){
+    margin-bottom: 10px;
+}
+.shipping-form{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+.client-name, .region{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    gap: 25px;
+}
+.cart-submit{
+     background-color: #27334b;
+     color: white;
+     padding: 8px 60px;
+     border: none;
+     align-self: end;
+}
+a{
+    color: #f8dae1;
+}
+input:not(input[type=radio]){
+    width: 100%;
+    padding: 4px;
+}
+input:focus{
+    outline: none;
+}
+
+.cash{
+    align-self: start;
+    width: 300px;
+}
+
+
+.summaryProducts{
+    display: flex;
+    gap: 10px;
+}

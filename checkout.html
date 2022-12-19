@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css.map">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -29,12 +29,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css.map">
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css.map">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/lightslider.css">
-    <link rel="stylesheet" href="css/contactUs.css">
-    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/cart2.css">
+    <script src="cart.js"></script>
 </head>
 <body>
-    
     <div class="navbar">
         <div class="logo">
             <img src="images/logo2.png" alt="">
@@ -60,50 +60,86 @@
             <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </div>
-
-    <main>
-        <div class="contact-us-wrapper">
-            <div class="img-form-wrapper">
-                <div class="form-box">
-
+    <main style="position: relative;">
+        <div class="wrapper">
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <div class="sum-price">
+                    <span>Items</span> 
+                    <span class="summary-cart-quantity">0</span> 
+                    <span class="summary-cart-sum-price">$</span>
                 </div>
-                <img src="images/8a6c5b866b90721.png" alt="" style="width: 450px;">
-                <form>
-                    <h3>Get in Touch</h1>
-                    <h6>We can't wait to hear from you</h5>
-                    <input type="text" name="name" placeholder="Your Name">
-                    <input type="email" name="email" placeholder="Your Email">
-                    <textarea name="message" id="contact-us-textarea" rows="6" placeholder="Type your message here..."></textarea>
-                    <button class="btnSend">SEND</button>
-                </form>
-            </div>
-            <div class="contact-us-info">
-                <h4>Other Ways to Get In Touch</h4>
-                <div class="contact-options">
-                    <div>
-                        <img src="images/location.svg" class="fa">
-                        <span>Beirut, Hamra Street</span>
-                    </div>
-                    <div style="justify-self: end;">
-                        <img src="images/phone.svg" class="fa">
-                        <span>+961 76057477</span>
-                    </div>
-                    <div>
-                        <img src="images/envelope.svg" class="fa">
-                        <span>craftycorner.lb@gmail.com</span>
-                    </div>
-                    <div style="justify-self: end;">
-                        <img src="images/instagram.svg" class="fa">
-                        <span>craftycorner.lb</span>
-                    </div>
-                    
+                <div class="summaryProducts"></div>
+                <div class="summary-group">
+                    <label> Shopping </label>
+                    <select>
+                        <option value="#" selected>Standard Delivery - 5$</option>
+                    </select>
                 </div>
-
+                <div class="summary-group">
+                    <label> Promo Code </label>
+                    <input type="text" placeholder="Enter your code" class="promocode">
+                </div>
+                <div class="totalCost">
+                    <span>Total Cost</span><span class="totalCostValue">0$</span>
+                </div>
+            </div>   
+            <div class="checkout-form">
+                <div class="contact-form">
+                    <div>
+                        <span class="cart2-title">Contact Information</span>
+                        <span>Already have an account? <a href="login.html">Log in</a></span>
+                    </div>
+                    <div>
+                          <input type="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="cart2-title">Shipping Address</div>
+                <div class="shipping-form">
+                    <div class="client-name">
+                            <input type="text" placeholder= "First Name">
+                            <input type="text" placeholder="Last Name">
+                    </div>
+                    <input type="text" placeholder= "Address">
+                    <input type="text" placeholder= "Street, apartment">
+                    <input type="text" placeholder= "City">
+                        <div class="region">
+                            <input type="text" placeholder= "Country/Region">
+                            <input type="text" placeholder= "Zip code">
+                        </div>
+                    <input type="phone" placeholder= "Phone">
+                    <div class="cash">
+                        <input type="radio" value="cash" style="display: inline;"> Cash on delivery
+                    </div>
+                    <button class="cart-submit"> Submit </button>
+                </div>
+                
             </div>
         </div>
+        
+        
+        <script>
+                let cart = localStorage.getItem("cart") || [];
+                cart = JSON.parse(cart);
+                const summaryProducts = document.querySelector(".summaryProducts")
+                for(let i=0; i < cart.length; i++){
+                    const p = cart[i];
+                    summaryProducts.innerHTML += `<span>${p.name}(${p.quantity}) - ${parseInt(p.price) * parseInt(p.quantity)}</span>`;
+                }  
+                document.querySelector(".summary-cart-quantity").innerText = cart.length; 
+                let priceSum = 0;
+                for(let i = 0; i < cart.length ; i++){
+                    priceSum += (parseInt(cart[i].price) * parseInt(cart[i].quantity));
+                }
+                document.querySelector(".summary-cart-sum-price").innerText = priceSum + "$"; 
+                document.querySelector(".totalCostValue").innerText = priceSum + 5 + "$"; 
 
+                const code = localStorage.getItem("promocode") || "";
+                document.querySelector(".promocode").value = code;
+
+
+            </script>
     </main>
-
     <footer>
         <img src="images/logo2.png" alt="" style="width: 281px;">
         <div class="footer-sitemap">
@@ -135,5 +171,6 @@
         </div>
         
     </footer>
+
 </body>
 </html>

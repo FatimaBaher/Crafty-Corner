@@ -265,6 +265,12 @@
     font-size: 33px;
     height: min-content;
 }
+.actions{
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
 .home-inspiration>#text2{
     font-size: 59px;
     text-decoration: underline;
@@ -317,4 +323,11 @@
     cursor: pointer;
 }
 
+.add-to-cart{
+    color: black;
+    border: 1px solid #707070;
+    padding: 7px 22px;
+    font-size: 18px;
+    background-color: transparent;
+}
 

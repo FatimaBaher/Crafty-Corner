@@ -7,11 +7,16 @@ footer{
     padding: 45px 0;
 }
 
-.footer-title{
+
+footer{
+    color: #5c5c5c;
+}
+.footer-title, footer a{
     font-size: 20px;
     text-decoration: underline;
     margin-bottom: 10px;
     display: inline-block;
+    color: #5c5c5c;
 }
 
 

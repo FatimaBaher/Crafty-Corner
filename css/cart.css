@@ -1,0 +1,126 @@
+*{
+    color: #5e5e5e;
+}
+.order-summary{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 30px 40px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f8dae1;
+}
+.sum-price{
+    display: flex;
+}
+.summary-cart-sum-price{
+    margin-left: auto;
+}
+.summary-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px   
+}
+.order-summary button{
+    border: none;
+    background-color: #27334b
+    ;
+    color: white;
+    padding: 8px 25px;
+}
+button a{
+    color: white;
+    text-decoration: none
+}
+.applyCode{
+    width: fit-content;
+}
+.totalCost{
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    min-height: 100vh;
+    overflow: hidden;
+}
+.promocode{
+    padding: 7px;
+    border: none;
+    background-color:#fdedef;
+}
+select{
+    color: #5e5e5e;
+    background-color: #fdedef;
+    padding: 7px;
+}
+.col-1{
+    margin-right: 21rem;
+    display: block;
+}
+.cartWrapper{
+    width: 67vw;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.cartWrapper > h2{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.cart-table{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cart-table > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cart-table-header{
+    
+}
+.cart-table-header .col-1{
+    flex-grow: 1;
+}
+
+.cart-table-header > *{
+    padding: 8px 20px;
+}
+.cart-table-row > *{
+    padding: 8px 30px;
+}
+
+
+.product-image{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 19px;
+}
+.product-image img{
+    width: 100px;
+    max-width: 100px;
+}
+
+.remove-product{
+    font-size: 12px;
+    cursor: pointer;
+}
+.continueShopping{
+    font-size: 12px;
+    text-decoration: none;
+    padding-left: 2.1rem;
+}
+
+.info{
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

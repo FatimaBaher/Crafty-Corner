@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css.map">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -30,11 +29,50 @@
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css.map">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/lightslider.css">
-    <link rel="stylesheet" href="css/contactUs.css">
-    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/inspirations.css">
+    <title>Inspirations</title>
+    <style>
+        .products-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .product-item.c1 .product-item-name{
+            background-color: #f8dae1;
+        }
+        .product-item.c2 .product-item-name{
+            background-color: #fff6e5;
+        }
+        .product-item.c3 .product-item-name{
+            background-color: #ecddf0;
+        }
+        .product-item img{
+            width: 100%
+        }
+        
+.product-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.product-item-name{
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    background-color: #ecddf0;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+
+    </style>
 </head>
 <body>
-    
     <div class="navbar">
         <div class="logo">
             <img src="images/logo2.png" alt="">
@@ -60,50 +98,56 @@
             <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </div>
-
-    <main>
-        <div class="contact-us-wrapper">
-            <div class="img-form-wrapper">
-                <div class="form-box">
-
-                </div>
-                <img src="images/8a6c5b866b90721.png" alt="" style="width: 450px;">
-                <form>
-                    <h3>Get in Touch</h1>
-                    <h6>We can't wait to hear from you</h5>
-                    <input type="text" name="name" placeholder="Your Name">
-                    <input type="email" name="email" placeholder="Your Email">
-                    <textarea name="message" id="contact-us-textarea" rows="6" placeholder="Type your message here..."></textarea>
-                    <button class="btnSend">SEND</button>
-                </form>
+    <section class="inspirations-hero">
+        <h1>Shop</h1>       
+    </section>
+    
+    <h2 style="color: black; text-decoration: underline; text-align: center; margin-bottom: 40px; margin-top: 10px;">Shop By<br>Category</h2>
+    <div class="products-grid">
+        <a href="product-pillow.html" style="text-decoration: none">
+            <div class="product-item c1">
+                <img src="images/pillow.JPG" alt="" width="230px" height="240px" style="object-fit: cover; margin-bottom: 4px;">
+                <div class="product-item-name">Pillows</div>
             </div>
-            <div class="contact-us-info">
-                <h4>Other Ways to Get In Touch</h4>
-                <div class="contact-options">
-                    <div>
-                        <img src="images/location.svg" class="fa">
-                        <span>Beirut, Hamra Street</span>
-                    </div>
-                    <div style="justify-self: end;">
-                        <img src="images/phone.svg" class="fa">
-                        <span>+961 76057477</span>
-                    </div>
-                    <div>
-                        <img src="images/envelope.svg" class="fa">
-                        <span>craftycorner.lb@gmail.com</span>
-                    </div>
-                    <div style="justify-self: end;">
-                        <img src="images/instagram.svg" class="fa">
-                        <span>craftycorner.lb</span>
-                    </div>
-                    
-                </div>
-
-            </div>
+        </a>
+        
+        <div class="product-item c2">
+            <img src="images/4.jpg" alt="" width="230px" height="240px" style="object-fit: cover; margin-bottom: 4px;">
+            <div class="product-item-name">Tote Bags</div>
         </div>
-
-    </main>
-
+        
+        <a href="product-hoops.html" style="text-decoration: none">
+        <div class="product-item c3">
+            <img src="images/hoops.jpg" alt="" width="230px" height="240px" style="object-fit: cover; margin-bottom: 4px;">
+            <div class="product-item-name">Hoops</div>
+        </div></a>
+        <div class="product-item c1">
+            <img src="images/custom_made_embroidered_drawstring_pouch_1571479140_20fd4e6f_progressive.jpg" alt="" width="230px" height="240px" style="object-fit: cover; margin-bottom: 4px;">
+            <div class="product-item-name">Pouches</div>
+        </div>
+        <div class="product-item c2">
+            <img src="images/228252445e50f663c512f8383955da00.jpg" alt="" width="230px" height="240px" style="object-fit: cover; margin-bottom: 4px;">
+            <div class="product-item-name">Hair Accessories</div>
+        </div>
+        <div class="product-item c3">
+            <img src="images/5.jpg" alt="" width="230px" height="240px" style="object-fit: cover; margin-bottom: 4px;">
+            <div class="product-item-name">Key Chains</div>
+        </div>
+        <div class="product-item c1">
+            <img src="images/frames.jfif" alt="" width="230px" height="240px" style="object-fit: cover; margin-bottom: 4px;">
+            <div class="product-item-name">Frames</div>
+        </div>
+        <div class="product-item c2">
+            <img src="images/43e09bd81232845acd2ff7994d0becb0.jpg" alt="" width="230px" height="240px" style="object-fit: cover; margin-bottom: 4px;">
+            <div class="product-item-name">Wall Hangings</div>
+        </div>
+        <div class="product-item c3">
+            <img src="images/0842967120540.jfif" alt="" width="230px" height="240px" style="object-fit: cover; margin-bottom: 4px;">
+            <div class="product-item-name">Boxes</div>
+        </div>
+    </div>
+    
+    
     <footer>
         <img src="images/logo2.png" alt="" style="width: 281px;">
         <div class="footer-sitemap">
